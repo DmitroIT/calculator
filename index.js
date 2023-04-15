@@ -1,14 +1,18 @@
-//оголошуємо першу змінну
-let num1 = prompt("Вкажіть перше число:");
-console.log(num1);
+let num1;
+let num2;
 
-//оголошуємо другу змінну
-let num2 = prompt("Вкажіть друге число:");
-console.log(num2);
 
-// перетворюємо рядки на числа
-num1 = Number(num1);
-num2 = Number(num2);
+do {
+    num1 = parseFloat(prompt("Вкажіть перше число:"))
+} while (isNaN(num1)) {
+    
+}
+
+do {
+    num2 = parseFloat(prompt("Вкажіть друге число:"))
+} while (isNaN(num2)) {
+    
+}
 
 //оголошуємо змінну додавання
 let sum = num1 + num2;
